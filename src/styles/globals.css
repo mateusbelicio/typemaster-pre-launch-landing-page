@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-base font-medium text-secondary-300 font-sans overflow-x-hidden overflow-y-scroll h-screen;
+    @apply h-screen overflow-x-hidden overflow-y-scroll font-sans text-base font-medium text-secondary-300;
     scrollbar-gutter: stable;
   }
 
@@ -17,6 +17,18 @@
   }
 
   .main-grid {
-    @apply grid sm:grid-cols-12 sm:gap-x-2.5 lg:gap-x-[1.875rem] gap-y-10 [&>*]:col-span-full;
+    @apply grid gap-y-10 sm:grid-cols-12 sm:gap-x-2.5 lg:gap-x-[1.875rem] [&>*]:col-span-full;
+  }
+}
+
+@layer components {
+  .hero-pattern {
+    @apply relative before:absolute before:row-start-1 before:row-end-2 before:h-1/2 before:w-full before:rounded-3xl before:bg-secondary-200;
+  }
+  .hero-pattern--left {
+    @apply before:bottom-0 before:right-full before:col-start-1 before:col-end-4 before:mr-[1.875rem];
+  }
+  .hero-pattern--right {
+    @apply before:left-full before:top-0 before:col-start-[-1] before:col-end-[-4] before:ml-[1.875rem];
   }
 }
