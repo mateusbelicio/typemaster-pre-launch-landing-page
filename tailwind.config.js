@@ -33,6 +33,9 @@ export default {
       fontFamily: {
         sans: ['Barlow', 'sans-serif'],
       },
+      borderRadius: {
+        '3xl': '1.25rem',
+      },
     },
   },
   plugins: [],

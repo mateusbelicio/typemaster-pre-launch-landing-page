@@ -15,4 +15,8 @@
   .main-container {
     @apply container px-6 md:px-10 lg:px-0;
   }
+
+  .main-grid {
+    @apply grid sm:grid-cols-12 sm:gap-x-2.5 lg:gap-x-[1.875rem] gap-y-10 [&>*]:col-span-full;
+  }
 }
