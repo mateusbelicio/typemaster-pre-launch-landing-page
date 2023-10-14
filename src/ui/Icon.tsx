@@ -13,11 +13,11 @@ function Icon({ name, className }: IconProps) {
   return (
     <span
       className={twMerge(
-        'flex aspect-square w-[4.0625rem] items-center justify-center rounded-2xl bg-primary-400 p-4',
+        'flex h-[4.0625rem] w-[4.0625rem] items-center justify-center rounded-2xl bg-primary-400 p-4',
         className,
       )}
     >
-      <svg className="h-full">
+      <svg className="h-full" aria-hidden="true">
         <use xlinkHref={`${icons}#icon-${name}`} />
       </svg>
     </span>

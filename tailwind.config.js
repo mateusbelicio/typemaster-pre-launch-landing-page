@@ -36,6 +36,15 @@ export default {
       borderRadius: {
         '3xl': '1.25rem',
       },
+      animation: {
+        appear: 'appear 300ms both 1s ease-out',
+      },
+      keyframes: {
+        appear: {
+          '0%': { scale: 0 },
+          '100%': { scale: 1 },
+        },
+      },
     },
   },
   plugins: [],
